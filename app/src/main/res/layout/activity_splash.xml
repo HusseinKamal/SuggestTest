@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/lyContainer"
+        android:background="@drawable/background"
+        tools:context=".ui.SplashActivity">
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"/>
+    <com.hussein.suggesttest.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title"
+            android:textColor="@color/font_green"
+            android:textSize="40sp"/>
+    <com.hussein.suggesttest.views.CustomAppButton
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnSuggest"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ripple_bg_style"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/suggest"
+            android:textAllCaps="false"
+            android:textSize="25sp"/>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:id="@+id/header">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/lyMenu"
+                        android:orientation="horizontal"
+                        android:layout_weight=".2"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:id="@+id/ivMenu"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_menu" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/lyLogo"
+                        android:orientation="horizontal"
+                        android:layout_weight=".6"
+                        android:gravity="center">
+                    <com.hussein.suggesttest.views.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tvTitle"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/title"
+                            android:textColor="@color/font_green"
+                            android:textSize="18sp"/>
+
+                    <ImageView
+                            android:id="@+id/ivLogo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/logo" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".2"
+                        android:clickable="true"
+                        android:id="@+id/lyBack">
+
+                    <ImageView
+                            android:id="@+id/iv_back_arrow"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_history" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</LinearLayout>

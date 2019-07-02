@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">وين ناكل؟</string>
+    <string name="suggest">اقترح</string>
+    <string name="title">وين نا كل؟</string>
+    <string name="another_suggest">اقتراح آخر</string>
+    <string name="ok">موافق</string>
+    <string name="details">التفاصيل</string>
+    <string name="rate">التقييم: </string>
+    <string name="see_link">زر موقعنا: </string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:id="@+id/lyContain"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+        />
+        <com.hussein.suggesttest.views.CirclePageIndicator
+                android:id="@+id/mIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:fillColor="@color/colorPrimary"
+                app:pageColor="@color/colorPrimary"
+                app:centered="false"
+                app:radius="4dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+        <ImageButton
+                android:id="@+id/iv_back_arrow"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:scaleY=".3"
+                android:scaleX=".3"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_history" />
+    </RelativeLayout>
